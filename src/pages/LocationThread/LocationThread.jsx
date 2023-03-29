@@ -13,6 +13,7 @@ export default function LocationThread() {
         <hr/>
         <section>
           <h1>Posts</h1>
+          <input>Write a message</input>
         </section>
       </main>
     </>
