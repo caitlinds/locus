@@ -1,0 +1,9 @@
+.LocationThread {
+    display: grid;
+    grid-template-columns: 1fr 2px 3fr;
+}
+/* 
+.checkedUsers {
+    display: flexbox;
+    justify-content: space-between;
+} */
