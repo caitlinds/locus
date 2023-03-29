@@ -14,6 +14,7 @@ export default function LocationThread() {
         <section>
           <h1>Posts</h1>
           <input>Write a message</input>
+          <button>Submit</button>
         </section>
       </main>
     </>
