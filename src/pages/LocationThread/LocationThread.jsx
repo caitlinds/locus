@@ -2,6 +2,9 @@ import { checkToken } from '../../utilities/users-service';
 import './LocationThread.css';
 
 export default function LocationThread() {
+  function handleClick() {
+    alert('clicked');
+  }
   
   return (
     <>
@@ -13,8 +16,8 @@ export default function LocationThread() {
         <hr/>
         <section>
           <h1>Posts</h1>
-          <input>Write a message</input>
-          <button>Submit</button>
+          <input value="Write a message"></input>
+          <button onClick={handleClick}>Submit</button>
         </section>
       </main>
     </>
