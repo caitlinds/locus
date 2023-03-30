@@ -6,6 +6,10 @@ export default function LocationThread() {
     alert('clicked');
   }
   
+  function handleChange() {
+    alert('typing');
+  }
+
   return (
     <>
       <main className="LocationThread">
@@ -16,7 +20,7 @@ export default function LocationThread() {
         <hr/>
         <section>
           <h1>Posts</h1>
-          <input value="Write a message"></input>
+          <input value="Write a message" onChange={handleChange}></input>
           <button onClick={handleClick}>Submit</button>
         </section>
       </main>
