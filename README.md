@@ -1,3 +1,3 @@
-# MERN-Stack Infrastructure
+# Locus
 
-Clone this repo to provide the starter code for a comprehensive MERN-Stack project including token-based authentication.
+Locaiton based social media
