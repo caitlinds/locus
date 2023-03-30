@@ -6,6 +6,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import LocationSearch from '../LocationSearch/LocationSearch';
 import LocationThread from '../LocationThread/LocationThread';
 import NavBar from '../../components/NavBar/NavBar';
+import Home from '../Home/Home';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -17,6 +18,7 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               {/* Route components in here */}
+              <Route path="/" element={<Home />} />
               <Route path="/search" element={<LocationSearch />} />
               <Route path="/location" element={<LocationThread />} />
             </Routes>
