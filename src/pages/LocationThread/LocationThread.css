@@ -7,3 +7,7 @@
     display: flexbox;
     justify-content: space-between;
 } */
+
+.postList {
+    list-style-type: none;
+}

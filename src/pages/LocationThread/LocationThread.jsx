@@ -1,10 +1,12 @@
 // import { checkToken } from '../../utilities/users-service';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './LocationThread.css';
 import LogOut from '../../components/LogOut/LogOut';
 import CheckedInUsers from '../../components/CheckedInUsers/CheckedInUsers';
 import CheckOut from '../../components/CheckOut/CheckOut';
 import Posts from '../../components/Posts/Posts';
+// import EditPost from '../../components/EditPost/EditPost';
 import * as postsAPI from '../../utilities/posts-api';
 
 export default function LocationThread({user, setUser}) {
@@ -23,8 +25,14 @@ export default function LocationThread({user, setUser}) {
     setPosts([...posts, post]);
   }
  
-  const allPostMaps = posts.map((p) => (
-    <h1>{p.content}</h1>
+  const allPostMaps = posts.map((p, idx) => (
+    <ul className='postList'>
+      <li>{user.name}</li>
+      <li>{p.content}</li>
+      <li>
+        <Link to={`/edit/${p._id}`}>Edit</Link>
+      </li>
+    </ul>
   ));
 
   return (

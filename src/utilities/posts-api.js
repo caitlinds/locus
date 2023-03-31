@@ -8,3 +8,7 @@ export function getAll() {
 export function add(postData) {
     return sendRequest(BASE_URL, 'POST', postData);
 }
+
+export function edit(postData) {
+    return sendRequest(BASE_URL, 'POST', postData);
+}

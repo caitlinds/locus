@@ -24,7 +24,6 @@ const [content, setContent] = useState({content:''});
         <input name="content" value={content.content} onChange={handleChange} required/>
         <button type="submit">Submit</button>
       </form>
-      
       </main>
     </>
   );
