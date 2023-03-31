@@ -18,9 +18,9 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               {/* Route components in here */}
-              <Route path="/" element={<Home />} />
-              <Route path="/search" element={<LocationSearch />} />
-              <Route path="/location" element={<LocationThread />} />
+              <Route path="/*" element={<Home />} />
+              <Route path="/search" element={<LocationSearch user={user} setUser={setUser} />} />
+              <Route path="/location" element={<LocationThread user={user} setUser={setUser} />} />
             </Routes>
           </>
           :
