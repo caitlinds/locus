@@ -1,3 +1,3 @@
-# Locus
+# MERN Twitter Clone
 
-Locaiton based social media
+MERN Twitter Clone
