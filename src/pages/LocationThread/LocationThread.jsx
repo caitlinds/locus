@@ -18,7 +18,7 @@ export default function LocationThread({user, setUser}) {
       setPosts(posts);
     }
     getPosts();
-  }, [])
+  }, [posts])
 
   async function handleAddPost(postData) {
     const post = await postsAPI.add(postData);
