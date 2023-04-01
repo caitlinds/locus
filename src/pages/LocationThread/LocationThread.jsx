@@ -27,11 +27,10 @@ export default function LocationThread({user, setUser}) {
  
   const allPostMaps = posts.map((p, idx) => (
     <ul className='postList'>
-      <li>{user.name}</li>
+      <li>{p.user.name}</li>
       <li>{p.content}</li>
-      <li>
-        <Link to={`/edit/${p._id}`}>Edit</Link>
-      </li>
+      <li>{p.user._id === user._id ? <Link to={`/edit/${p._id}`}>Edit</Link> : 'no'}</li>
+      <li>{p.user._id === user._id ? <Link to={`/delete/${p._id}`}>Delete</Link> : 'no'}</li>
     </ul>
   ));
 

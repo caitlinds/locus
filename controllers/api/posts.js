@@ -6,7 +6,7 @@ module.exports = {
 };
 
 async function getAll(req, res) {
-  const posts = await Post.find({}).sort('-updatedAt');
+  const posts = await Post.find({}).sort('-updatedAt').populate('user').exec();
   res.json(posts);
 }
 
