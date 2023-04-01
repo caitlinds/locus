@@ -8,15 +8,13 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      &nbsp; | &nbsp;      
-      <Link to="/location">Location Thread</Link>
-      &nbsp; | &nbsp;
-      <Link to="/search">Location Search</Link>
-      &nbsp; | &nbsp;
+    <nav className='NavBar'>
       <span>Welcome, {user.name}</span>
-      &nbsp; | &nbsp;
+      <br></br>
+      <Link to="/">Home</Link>
+      <br></br>     
+      <Link to="/favorites">Favorites</Link>
+      <br></br>
       <Link to="" onClick={handleLogOut}>Log Out</Link>
     </nav>
   );

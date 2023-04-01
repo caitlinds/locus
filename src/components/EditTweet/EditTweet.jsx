@@ -1,4 +1,4 @@
-export default function EditPost(user, setUser) {
+export default function EditTweet(user, setUser) {
       return (
         <>
         <h1>Edit</h1>

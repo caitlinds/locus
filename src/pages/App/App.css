@@ -1,4 +1,6 @@
 .App {
+  display: grid;
+  grid-template-columns: 1fr 2px 3fr;
   text-align: center;
 }
 
@@ -26,6 +28,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.NavBar {
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes App-logo-spin {

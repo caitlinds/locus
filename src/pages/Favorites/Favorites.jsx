@@ -1,4 +1,4 @@
-export default function LocationSearch() {
+export default function Favorites() {
   function handleClick() {
     alert('clicked');
   }
@@ -10,7 +10,7 @@ export default function LocationSearch() {
   return (
     <>
     <main>
-      <h1 className="LocationSearch">Location Search</h1>
+      <h1>Favorites</h1>
       <input type="text" value="Find a Location" onChange={handleChange}></input>
       <div className="center-align">
           <button type="submit" onClick={handleClick}>Search</button>

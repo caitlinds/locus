@@ -3,11 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import LocationSearch from '../LocationSearch/LocationSearch';
-import LocationThread from '../LocationThread/LocationThread';
+import Favorites from '../Favorites/Favorites';
 import NavBar from '../../components/NavBar/NavBar';
-import EditPost from '../../components/EditPost/EditPost';
-import Home from '../Home/Home';
+import EditTweet from '../../components/EditTweet/EditTweet';
+import HomePage from '../Home/HomePage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -16,13 +15,15 @@ export default function App() {
     <main className="App">
       { user ?
           <>
-            <NavBar user={user} setUser={setUser} />
+            <aside>
+              <NavBar user={user} setUser={setUser} />
+            </aside>
+            <hr/>
             <Routes>
               {/* Route components in here */}
-              <Route path="/*" element={<Home />} />
-              <Route path="/search" element={<LocationSearch user={user} setUser={setUser} />} />
-              <Route path="/location" element={<LocationThread user={user} setUser={setUser} />} />
-              <Route path="/edit/:id" element={<EditPost user={user} setUser={setUser} />} />
+              <Route path="/*" element={<HomePage user={user} setUser={setUser}/>} />
+              <Route path="/favorites" element={<Favorites user={user} setUser={setUser} />} />
+              <Route path="/edit/:id" element={<EditTweet user={user} setUser={setUser} />} />
             </Routes>
           </>
           :
