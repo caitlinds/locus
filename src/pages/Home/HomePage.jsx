@@ -23,7 +23,7 @@ export default function Home({user, setUser}) {
   async function handleUpdateTweet(tweet, updatedContent) {
     tweet.updatedContent = updatedContent.updatedContent;
     // console.log(tweet);
-    const updatedTweet = await tweetsAPI.update(tweet);
+    await tweetsAPI.update(tweet);
     setTweets(tweets);
   }
 

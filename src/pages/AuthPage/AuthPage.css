@@ -1,0 +1,10 @@
+.flex-ctr-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpBtn {
+  background-color: rgb(74, 153, 233);;
+}
