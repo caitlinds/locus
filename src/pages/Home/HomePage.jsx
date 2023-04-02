@@ -1,13 +1,6 @@
-// import { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import './HomePage.css';
 import TweetList from '../../components/TweetList/TweetList';
 import TweetForm from '../../components/TweetForm/TweetForm';
-// import CheckedInUsers from '../../components/CheckedInUsers/CheckedInUsers';
-// import CheckOut from '../../components/CheckOut/CheckOut';
-// import Posts from '../../components/Posts/Posts';
-// import EditPost from '../../components/EditPost/EditPost';
-// import * as postsAPI from '../../utilities/posts-api';
 import * as tweetsAPI from '../../utilities/tweets-api';
 import { useState, useEffect } from 'react';
 
@@ -20,18 +13,36 @@ export default function Home({user, setUser}) {
       setTweets(tweets);
     }
     getTweets();
-  }, [tweets])
+  }, [tweets]);
 
   async function handleAddTweet(tweetData) {
     const tweet = await tweetsAPI.add(tweetData);
     setTweets([...tweets, tweet]);
   }
 
+  async function handleUpdateTweet(tweet, updatedContent) {
+    tweet.updatedContent = updatedContent.updatedContent;
+    // console.log(tweet);
+    const updatedTweet = await tweetsAPI.update(tweet);
+    setTweets(tweets);
+  }
+
+  async function handleDeleteTweet(tweetData) {
+    await tweetsAPI.deleteTweet(tweetData);
+    setTweets(tweets);
+  }
+
   return (
     <>
       <main>
           <TweetForm handleAddTweet={handleAddTweet} />
-          <TweetList user={user} tweets={tweets} />
+          <TweetList 
+            user={user} 
+            tweets={tweets} 
+            setTweets={setTweets}
+            handleDeleteTweet={handleDeleteTweet} 
+            handleUpdateTweet={handleUpdateTweet} 
+          />
       </main>
     </>
   );

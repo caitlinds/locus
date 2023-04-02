@@ -1,7 +1,12 @@
-export default function DeleteTweet({user, tweet}) {
+export default function DeleteTweet({user, tweet, handleDeleteTweet}) {
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleDeleteTweet(tweet);
+  }
+
   return (
     <>
-      <button type="submit">Delete</button>
+      <button type="submit" onClick={handleSubmit}>Delete</button>
     </>
   );
 }
