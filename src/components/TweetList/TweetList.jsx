@@ -18,7 +18,7 @@ export default function TweetList({user, tweets}) {
 
     return (
       <>
-      <ul className="TweetList">{TweetList}</ul>
+        <ul className="TweetList">{TweetList}</ul>
       </>
     );
 }

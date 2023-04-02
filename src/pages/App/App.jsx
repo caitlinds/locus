@@ -5,7 +5,7 @@ import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import Favorites from '../Favorites/Favorites';
 import NavBar from '../../components/NavBar/NavBar';
-import EditTweet from '../../components/EditTweet/EditTweet';
+import EditForm from '../../components/EditForm/EditForm';
 import HomePage from '../Home/HomePage';
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
               {/* Route components in here */}
               <Route path="/*" element={<HomePage user={user} setUser={setUser}/>} />
               <Route path="/favorites" element={<Favorites user={user} setUser={setUser} />} />
-              <Route path="/edit/:id" element={<EditTweet user={user} setUser={setUser} />} />
+              <Route path="/edit/:id" element={<EditForm user={user} setUser={setUser} />} />
             </Routes>
           </>
           :

@@ -1,0 +1,11 @@
+.btn {
+  width: 200px;
+  border-color: black;
+}
+
+.flex-ctr-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
