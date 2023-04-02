@@ -1,6 +1,9 @@
-.btn {
-  width: 200px;
+.tweetBtn {
+  width: 100px;
+  background-color: rgb(74, 153, 233);
   border-color: black;
+  border-radius: 20px;
+  color: black;
 }
 
 .flex-ctr-column {
@@ -8,4 +11,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.tweetInput {
+  display: flex;
+  align-items: left;
+  padding-left: 5px;
+  padding-top: 5px;
+  border: 1px solid black;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
 }

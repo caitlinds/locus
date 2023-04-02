@@ -1,3 +1,5 @@
+import './DeleteTweet.css';
+
 export default function DeleteTweet({user, tweet, handleDeleteTweet}) {
   function handleSubmit(e) {
     e.preventDefault();
@@ -5,8 +7,6 @@ export default function DeleteTweet({user, tweet, handleDeleteTweet}) {
   }
 
   return (
-    <>
-      <button type="submit" onClick={handleSubmit}>Delete</button>
-    </>
+    <button className="delBtn" type="submit" onClick={handleSubmit}>Delete</button>
   );
 }

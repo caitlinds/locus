@@ -1,4 +1,5 @@
 // import { Link } from 'react-router-dom';
+import './TweetListItem.css';
 import { useState } from 'react';
 import EditForm from '../../components/EditForm/EditForm';
 import DeleteTweet from '../../components/DeleteTweet/DeleteTweet';
@@ -9,21 +10,23 @@ export default function TweetListItem({ user, tweet, setTweets, handleDeleteTwee
 
   return (
     <>
-        <li>{tweet.user.name}</li>
+        <li id="userName">{tweet.user.name}</li>
         {tweet.user._id === user._id ? 
           <div>
             {showEdit ? 
-              <li>
-                {tweet.content}
-                <br/>
-                <button onClick={() => setShowEdit(!showEdit)}>EDIT</button>
-                <br/>
-                <DeleteTweet 
-                  user={user} 
-                  tweet={tweet} 
-                  handleDeleteTweet={handleDeleteTweet} 
-                />
+            <>
+              <li className="tweetContent">
+                  {tweet.content}
               </li>
+                  <div id="optBtn">
+                  <button className="editBtn" onClick={() => setShowEdit(!showEdit)}>Edit</button>
+                  <DeleteTweet 
+                    user={user} 
+                    tweet={tweet} 
+                    handleDeleteTweet={handleDeleteTweet} 
+                  />
+                  </div>
+            </>
               :
               <EditForm 
                 user={user} 
@@ -33,7 +36,7 @@ export default function TweetListItem({ user, tweet, setTweets, handleDeleteTwee
               />}
           </div> 
           : 
-          <li>{tweet.content}</li>}
+          <li className="tweetContent">{tweet.content}</li>}
         <br/>
         <br/>
     </>

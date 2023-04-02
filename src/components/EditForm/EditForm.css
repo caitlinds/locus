@@ -4,3 +4,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.saveBtn {
+  background-color: rgb(74, 153, 233);
+  color: white;
+}
+
+.updatedContent {
+  width: 200px;
+  height: 100px;
+  padding-left: 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+}

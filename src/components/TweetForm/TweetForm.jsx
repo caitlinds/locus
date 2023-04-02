@@ -20,8 +20,8 @@ export default function TweetForm({handleAddTweet}) {
   return (
     <>
       <form className="flex-ctr-column" onSubmit={handleSubmit}>
-        <input name="content" value={content.content} onChange={handleChange} required/>
-        <button className="btn" type="submit">Submit</button>
+        <textarea className="tweetInput" name="content" value={content.content} onChange={handleChange} required/>
+        <button className="tweetBtn" type="submit">Post</button>
       </form>
     </>
   );

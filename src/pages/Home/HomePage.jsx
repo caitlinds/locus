@@ -34,7 +34,8 @@ export default function Home({user, setUser}) {
 
   return (
     <>
-      <main>
+      <main className="flex-ctr-column">
+          <h2>Home</h2>
           <TweetForm handleAddTweet={handleAddTweet} />
           <TweetList 
             user={user} 

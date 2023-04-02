@@ -1,0 +1,31 @@
+.TweetListItem {
+  display: flex;
+}
+
+#userName {
+  display: flex;
+  align-items: left;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.tweetContent {
+  display: flex;
+  align-items: left;
+  padding-left: 5px;
+  padding-top: 2px;
+  border: 1px solid grey; 
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+}
+
+.editBtn {
+  background-color: rgb(74, 153, 233);
+  color: white;
+}
+
+#optBtn {
+  margin: 0px;
+  padding: 0px;
+}

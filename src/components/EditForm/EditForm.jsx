@@ -23,8 +23,8 @@ export default function EditForm({user, tweet, setTweets, handleUpdateTweet}) {
     <>
       <form className="flex-ctr-column" onSubmit={handleSubmit}>
         <input type="hidden" name="tweet" value={tweet}></input>
-        <textarea name="updatedContent" value={updatedContent.updatedContent} onChange={handleChange}></textarea>
-        <button type="submit">Save</button>
+        <textarea className="updatedContent" name="updatedContent" value={updatedContent.updatedContent} onChange={handleChange}/>
+        <button className="saveBtn" type="submit">Save</button>
       </form>
     </>
   );
