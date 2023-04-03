@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './EditForm.css';
 
-export default function EditForm({user, tweet, setTweets, handleUpdateTweet}) {
+export default function EditForm({user, tweet, setTweets, handleUpdateTweet, showEdit, setShowEdit}) {
   const [updatedContent, setUpdatedContent] = useState({updatedContent:tweet.content});
   
   function handleSubmit(e) {
     e.preventDefault();
     handleUpdateTweet(tweet, updatedContent);
-    // console.log(tweet);
     setUpdatedContent(updatedContent);
+    // setShowEdit(true);
   }
 
   function handleChange(e) {
@@ -16,7 +16,6 @@ export default function EditForm({user, tweet, setTweets, handleUpdateTweet}) {
     ...updatedContent,
     [e.target.name]: e.target.value
     })
-    // console.log(updatedContent.updatedContent);
   }
 
   return (

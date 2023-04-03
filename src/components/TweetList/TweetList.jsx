@@ -11,7 +11,7 @@ import './TweetList.css';
 // import EditPost from '../../components/EditPost/EditPost';
 // import * as tweetsAPI from '../../utilities/tweets-api';
 
-export default function TweetList({user, tweets, setTweets, handleDeleteTweet, handleUpdateTweet}) {
+export default function TweetList({user, tweets, setTweets, handleDeleteTweet, handleUpdateTweet, showEdit, setShowEdit}) {
   const TweetList = tweets.map((tweet, idx) => (
       <TweetListItem 
         user={user} 
@@ -19,6 +19,8 @@ export default function TweetList({user, tweets, setTweets, handleDeleteTweet, h
         setTweets={setTweets}
         handleDeleteTweet={handleDeleteTweet} 
         handleUpdateTweet={handleUpdateTweet}
+        showEdit={showEdit}
+        setShowEdit={setShowEdit}
         key={idx}
       />
   ));

@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 
 export default function Home({user, setUser}) {
   const [tweets, setTweets] = useState([]);
+  const [showEdit, setShowEdit] = useState(true);
 
   useEffect(function() {
     async function getTweets() {
@@ -13,22 +14,24 @@ export default function Home({user, setUser}) {
       setTweets(tweets);
     }
     getTweets();
-  }, [tweets]);
+  }, []);
 
   async function handleAddTweet(tweetData) {
-    const tweet = await tweetsAPI.add(tweetData);
-    setTweets([...tweets, tweet]);
+    const tweets = await tweetsAPI.add(tweetData);
+    setTweets(tweets);
   }
 
   async function handleUpdateTweet(tweet, updatedContent) {
     tweet.updatedContent = updatedContent.updatedContent;
-    // console.log(tweet);
     await tweetsAPI.update(tweet);
+    const tweets = await tweetsAPI.getAll();
     setTweets(tweets);
+    setShowEdit(true);
   }
 
   async function handleDeleteTweet(tweetData) {
     await tweetsAPI.deleteTweet(tweetData);
+    const tweets = await tweetsAPI.getAll();
     setTweets(tweets);
   }
 
@@ -43,6 +46,8 @@ export default function Home({user, setUser}) {
             setTweets={setTweets}
             handleDeleteTweet={handleDeleteTweet} 
             handleUpdateTweet={handleUpdateTweet} 
+            showEdit={showEdit}
+            setShowEdit={setShowEdit}
           />
       </main>
     </>

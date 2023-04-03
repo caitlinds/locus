@@ -1,12 +1,11 @@
 // import { Link } from 'react-router-dom';
 import './TweetListItem.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 import EditForm from '../../components/EditForm/EditForm';
 import DeleteTweet from '../../components/DeleteTweet/DeleteTweet';
 // import { Routes, Route } from 'react-router-dom';
 
-export default function TweetListItem({ user, tweet, setTweets, handleDeleteTweet, handleUpdateTweet }) {
-  const [showEdit, setShowEdit] = useState(true);
+export default function TweetListItem({ user, tweet, setTweets, handleDeleteTweet, handleUpdateTweet, showEdit, setShowEdit}) {
 
   return (
     <>
@@ -33,6 +32,8 @@ export default function TweetListItem({ user, tweet, setTweets, handleDeleteTwee
                 tweet={tweet}
                 setTweets={setTweets}
                 handleUpdateTweet={handleUpdateTweet}
+                showEdit={showEdit}
+                setShowEdit={setShowEdit}
               />}
           </div> 
           : 

@@ -8,22 +8,25 @@ module.exports = {
 };
 
 async function getAll(req, res) {
-  const tweets = await Tweet.find({}).sort('-updatedAt').populate('user').exec();
+  const tweets = await Tweet.find({}).sort('-createdAt').populate('user').exec();
   res.json(tweets);
 }
 
 async function create(req, res) {
   req.body.user = req.user._id;
-  const tweet = await Tweet.create(req.body);
-  res.json(tweet);
+  await Tweet.create(req.body);
+  const tweets =  await Tweet.find({}).sort('-createdAt').populate('user').exec();
+  res.json(tweets);
 } 
 
 async function deleteTweet(req, res) {
-  console.log(req.body);
-  const tweet = await Tweet.findByIdAndDelete(req.body._id);
+  await Tweet.findByIdAndDelete(req.body._id);
+  const tweets =  await Tweet.find({}).sort('-createdAt').populate('user').exec();
+  res.json(tweets);
 }
 
 async function update(req, res) {
   const tweet = await Tweet.findByIdAndUpdate({_id:req.body._id}, {content:req.body.updatedContent});
-  res.json(tweet);
+  const tweets =  await Tweet.find({}).sort('-createdAt').populate('user').exec();
+  res.json(tweets);
 }
