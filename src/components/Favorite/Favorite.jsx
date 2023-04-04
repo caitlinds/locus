@@ -5,7 +5,9 @@ export default function Favorite({user, tweet, setTweets, handleUpdateTweet, sho
 
   return (
     <>
-    Favorite
+    <button className="replyBtn">
+      <img alt="reply" className="fave-icon" src="./heart_icon.png"/>
+    </button>
     </>
   );
 }

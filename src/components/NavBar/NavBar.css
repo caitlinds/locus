@@ -1,0 +1,35 @@
+.home-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.fave-icon-nb {
+    height: 50px;
+    width: 75px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.logout-icon-nb {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: -5px;
+    background-color: white;
+}
+
+.bm-icon-nb {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    background-color: white;
+}

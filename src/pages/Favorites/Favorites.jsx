@@ -1,4 +1,4 @@
-export default function Favorites() {
+export default function Favorites(user, setUser, tweets, setTweets) {
 
   return (
     <>

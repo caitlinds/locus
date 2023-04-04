@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './TweetListItem.css';
+import './ProfileTweetListItem.css';
 import { useState } from 'react';
 import EditForm from '../../components/EditForm/EditForm';
 import DeleteTweet from '../../components/DeleteTweet/DeleteTweet';
@@ -8,7 +8,7 @@ import Retweet from '../../components/Retweet/Retweet';
 import Favorite from '../../components/Favorite/Favorite';
 import Bookmark from '../../components/Bookmark/Bookmark';
 
-export default function TweetListItem({ user, tweet, setTweets, handleDeleteTweet, handleUpdateTweet}) {
+export default function ProfileTweetListItem({ user, tweet, setTweets}) {
   const [showEdit, setShowEdit] = useState(true);
   const [showReply, setShowReply] = useState(true);
 
@@ -29,7 +29,7 @@ export default function TweetListItem({ user, tweet, setTweets, handleDeleteTwee
                   <DeleteTweet 
                     user={user} 
                     tweet={tweet} 
-                    handleDeleteTweet={handleDeleteTweet} 
+                    // handleDeleteTweet={handleDeleteTweet} 
                   />
           </div>
               </li>
@@ -52,7 +52,7 @@ export default function TweetListItem({ user, tweet, setTweets, handleDeleteTwee
                 user={user} 
                 tweet={tweet}
                 setTweets={setTweets}
-                handleUpdateTweet={handleUpdateTweet}
+                // handleUpdateTweet={handleUpdateTweet}
                 showEdit={showEdit}
                 setShowEdit={setShowEdit}
               />}

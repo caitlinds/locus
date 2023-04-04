@@ -5,7 +5,9 @@ export default function Bookmark({user, tweet, setTweets, handleUpdateTweet, sho
 
   return (
     <>
-    BM
+    <button className="replyBtn">
+      <img alt="reply" className="bm-icon" src="./bookmark_icon.png"/>
+    </button>
     </>
   );
 }
