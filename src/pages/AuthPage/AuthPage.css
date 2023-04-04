@@ -8,3 +8,8 @@
 .signUpBtn {
   background-color: rgb(74, 153, 233);;
 }
+
+#login-logo {
+  height: 230px;
+  width: auto;
+}

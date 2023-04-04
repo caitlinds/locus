@@ -6,6 +6,11 @@ import LoginForm from '../../components/LoginForm/LoginForm';
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
+    <>
+    <aside>
+      <img id="login-logo" src="twitter-logo.png"/>
+    </aside>
+    <hr/>
     <main className="flex-ctr-column">
       <button className="signUpBtn" onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
       { showSignUp ?
@@ -14,5 +19,6 @@ export default function AuthPage({ setUser }) {
           <LoginForm setUser={setUser} />
       }
     </main>
+    </>
   );
 }
