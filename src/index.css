@@ -118,8 +118,8 @@ input:focus {
 }
 
 button, a.button {
-  margin: 1vmin;
-  padding: 1vmin;
+  /* margin: 1vmin;
+  padding: 1vmin; */
   color: var(--white);
   background-color: var(--orange);
   font-size: 2vmin;
@@ -132,22 +132,24 @@ button, a.button {
   cursor: pointer;
 }
 
-button.btn-sm {
+/* button.btn-sm {
   font-size: 1.5vmin;
   padding: .6vmin .8vmin;
-}
+} */
 
-button.btn-xs {
+/* button.btn-xs {
   font-size: 1vmin;
   padding: .4vmin .5vmin;
-}
+} */
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  background-color: rgb(164, 204, 244);
+  color: white;
+  border: none;
 }
 
 button[type="submit"] {
   grid-column: span 2;
-  margin: 1vmin 0 0;
+  /* margin: 1vmin 0 0; */
 }

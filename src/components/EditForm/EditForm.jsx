@@ -4,11 +4,11 @@ import './EditForm.css';
 export default function EditForm({user, tweet, setTweets, handleUpdateTweet, showEdit, setShowEdit}) {
   const [updatedContent, setUpdatedContent] = useState({updatedContent:tweet.content});
   
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    handleUpdateTweet(tweet, updatedContent);
+    await handleUpdateTweet(tweet, updatedContent);
     setUpdatedContent(updatedContent);
-    // setShowEdit(true);
+    setShowEdit(true);
   }
 
   function handleChange(e) {

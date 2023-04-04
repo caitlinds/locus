@@ -7,6 +7,8 @@ export default function DeleteTweet({user, tweet, handleDeleteTweet}) {
   }
 
   return (
-    <button className="delBtn" type="submit" onClick={handleSubmit}>Delete</button>
+    <button className="delBtn" type="submit" onClick={handleSubmit}>
+      <img alt="delete" id="del-icon" src="delete_icon.png"/>
+    </button>
   );
 }
