@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import './TweetListItem.css';
 import { useState } from 'react';
+import './TweetListItem.css';
 import EditForm from '../../components/EditForm/EditForm';
 import DeleteTweet from '../../components/DeleteTweet/DeleteTweet';
 import ReplyForm from '../ReplyForm/ReplyForm';

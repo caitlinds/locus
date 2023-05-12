@@ -29,4 +29,4 @@ async function update(req, res) {
   const tweet = await Tweet.findByIdAndUpdate({_id:req.body._id}, {content:req.body.updatedContent});
   const tweets =  await Tweet.find({}).sort('-createdAt').populate('user').exec();
   res.json(tweets);
-}
+} 

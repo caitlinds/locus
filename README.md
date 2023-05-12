@@ -1,7 +1,7 @@
-# MERN Twitter Clone
+# Locus HR
 
 ## Description
-The Twitter Clone App mimics the functionality of the popular Twitter website. Twitter is a social networking site that allows people to post their thoughts with a large audience. 
+Locus HR
 
 In this app, users can share messages (tweets) with friends by posting a tweet from the home page. The tweet is then displayed on the home page for all users to see. Each posted tweet has a navagation bar below the tweet content, which can be used to reply to, retweet, like, or bookmark the message. Tweets can be edited by clicking the edit icon in the top right corner of a tweet. You can then update and save the content. Tweets can also be deleted by clicking the trash can icon. 
 
