@@ -7,11 +7,12 @@ export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
     <>
-    <aside>
+    {/* <aside>
       <img id="login-logo" src="twitter-logo.png"/>
     </aside>
-    <hr/>
-    <main className="flex-ctr-column">
+    <hr/> */}
+    <main className="AuthPage">
+      <h1>Locus HR</h1>
       <button className="signUpBtn" onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
       { showSignUp ?
           <SignUpForm setUser={setUser} />

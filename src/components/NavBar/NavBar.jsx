@@ -18,22 +18,10 @@ export default function NavBar({ user, setUser }) {
         <img alt="home" className="home-icon" src="./home_icon.png"/>
       </button>
       </Link>
-      <br></br>     
-      <Link to="/favorites">
-      <button className="replyBtn">
-        <img alt="favorites" className="fave-icon-nb" src="./heart_icon.png"/>
-      </button>
-      </Link>
-      <br></br>     
-      <Link to="/bookmarks">
-      <button className="replyBtn">
-        <img alt="bookmarks" className="bm-icon-nb" src="./bookmark_icon.png"/>
-      </button>
-      </Link>
-      <br></br>     
+      <br></br>   
       <Link to="/profile">
       <button className="replyBtn">
-        <img alt="profile" className="profile-icon" src="./profile_icon.png"/>
+        <img alt="profile" className="profile-icon" src="./profile_icon.jpeg"/>
       </button>
       </Link>
       <br></br>

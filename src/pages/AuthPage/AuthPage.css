@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.AuthPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
 .signUpBtn {
   background-color: rgb(74, 153, 233);;
 }
