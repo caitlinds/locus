@@ -44,6 +44,10 @@ export default function Home({user, setUser}) {
         <hr/>
         <section className="flex-ctr-column">
           <h2>Portal</h2>
+          <div className="construction">
+            <h1>*Under construction*</h1>
+            <img alt="hammer" className="hammer-icon" src="./hammer_icon.png"/>
+          </div>
           <div className="rowOne">
             <Link to="/pay" className="link">
               <button className="portal-icon">

@@ -21,3 +21,13 @@
   height: 230px;
   width: auto;
 }
+
+.construction {
+  display: inline-flex;
+}
+
+.hammer-icon {
+  margin-top: 15px;
+  height: 40px;
+  width: auto;
+}
