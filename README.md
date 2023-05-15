@@ -39,5 +39,4 @@ Locus HR is an online human resources portal that allows both employees and admi
 ## Icebox Features
 Future improvements:
 - Enhance UI
-- Create administrative access
 - Make mobile responsive
