@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import './Bookmark.css';
 
-export default function Bookmark({user, tweet, setTweets, handleUpdateTweet, showEdit, setShowEdit}) {
+export default function Bookmark({user, tweet, setGoals, handleUpdateGoal, showEdit, setShowEdit}) {
 
   return (
     <>

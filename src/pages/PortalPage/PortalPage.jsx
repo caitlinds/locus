@@ -1,39 +1,39 @@
 import './PortalPage.css';
 import { Link } from 'react-router-dom';
-import TweetList from '../../components/TweetList/TweetList';
-import TweetForm from '../../components/TweetForm/TweetForm';
+// import TweetList from '../../components/TweetList/TweetList';
+// import TweetForm from '../../components/TweetForm/TweetForm';
 import NavBar from '../../components/NavBar/NavBar';
-import * as tweetsAPI from '../../utilities/tweets-api';
-import { useState, useEffect } from 'react';
+// import * as tweetsAPI from '../../utilities/tweets-api';
+// import { useState, useEffect } from 'react';
 
-export default function Home({user, setUser}) {
-  const [tweets, setTweets] = useState([]);
+export default function PortalPage({user, setUser}) {
+  // const [tweets, setTweets] = useState([]);
 
-  useEffect(function() {
-    async function getTweets() {
-      const tweets = await tweetsAPI.getAll();
-      setTweets(tweets);
-    }
-    getTweets();
-  }, []);
+  // useEffect(function() {
+  //   async function getTweets() {
+  //     const tweets = await tweetsAPI.getAll();
+  //     setTweets(tweets);
+  //   }
+  //   getTweets();
+  // }, []);
 
-  async function handleAddTweet(tweetData) {
-    const tweets = await tweetsAPI.add(tweetData);
-    setTweets(tweets);
-  }
+  // async function handleAddTweet(tweetData) {
+  //   const tweets = await tweetsAPI.add(tweetData);
+  //   setTweets(tweets);
+  // }
 
-  async function handleUpdateTweet(tweet, updatedContent) {
-    tweet.updatedContent = updatedContent.updatedContent;
-    await tweetsAPI.update(tweet);
-    const tweets = await tweetsAPI.getAll();
-    setTweets(tweets);
-  }
+  // async function handleUpdateTweet(tweet, updatedContent) {
+  //   tweet.updatedContent = updatedContent.updatedContent;
+  //   await tweetsAPI.update(tweet);
+  //   const tweets = await tweetsAPI.getAll();
+  //   setTweets(tweets);
+  // }
 
-  async function handleDeleteTweet(tweetData) {
-    await tweetsAPI.deleteTweet(tweetData);
-    const tweets = await tweetsAPI.getAll();
-    setTweets(tweets);
-  }
+  // async function handleDeleteTweet(tweetData) {
+  //   await tweetsAPI.deleteTweet(tweetData);
+  //   const tweets = await tweetsAPI.getAll();
+  //   setTweets(tweets);
+  // }
 
   return (
     <>

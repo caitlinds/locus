@@ -4,6 +4,9 @@ export default function Favorites(user, setUser, tweets, setTweets) {
     <>
     <main>
       <h1>Directory</h1>
+      <h2>
+        {/* Get all users from server and list info */}
+      </h2>
     </main>
     </>
   );

@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import './Favorite.css';
 
-export default function Favorite({user, tweet, setTweets, handleUpdateTweet, showEdit, setShowEdit}) {
+export default function Favorite({user, goal, setGoals, handleUpdateGoal, showEdit, setShowEdit}) {
 
   return (
     <>

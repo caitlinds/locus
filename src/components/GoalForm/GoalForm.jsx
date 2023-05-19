@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import './TweetForm.css';
+import './GoalForm.css';
 
-export default function TweetForm({handleAddTweet}) {
+export default function GoalForm({handleAddGoal}) {
   const [content, setContent] = useState({content:''});
 
   function handleSubmit(e) {
       e.preventDefault();
-      handleAddTweet(content);
+      handleAddGoal(content);
       setContent({content:''});
   }
   
@@ -21,7 +21,7 @@ export default function TweetForm({handleAddTweet}) {
     <>
       <form className="flex-ctr-column" onSubmit={handleSubmit}>
         <textarea className="tweetInput" name="content" value={content.content} onChange={handleChange} required/>
-        <button className="tweetBtn" type="submit">Tweet</button>
+        <button className="goalBtn" type="submit">Add Goal</button>
       </form>
     </>
   );

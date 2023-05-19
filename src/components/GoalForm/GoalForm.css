@@ -1,13 +1,13 @@
-.tweetBtn {
+.goalBtn {
   height: 38px;
-  width: 80px;
+  width: 120px;
   background-color: rgb(74, 153, 233);
   border-radius: 20px;
   border: none;
   color: white;
   padding: 1vmin;
   margin-bottom: 2vmin;
-  font-size: 17px;
+  font-size: 17px; 
 }
 
 .flex-ctr-column {

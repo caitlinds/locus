@@ -1,9 +1,9 @@
-import './DeleteTweet.css';
+import './DeleteGoal.css';
 
-export default function DeleteTweet({user, tweet, handleDeleteTweet}) {
+export default function DeleteGoal({user, goal, handleDeleteGoal}) {
   function handleSubmit(e) {
     e.preventDefault();
-    handleDeleteTweet(tweet);
+    handleDeleteGoal(goal);
   }
 
   return (
