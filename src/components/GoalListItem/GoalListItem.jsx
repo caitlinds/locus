@@ -19,7 +19,7 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
         {/* {user._id}
         {goal.user._id} */}
         {/* {goal.user._id === goal.user._id ?  */}
-        {goal.user._id === user.id ? 
+        {goal.user._id ? 
           <div>
             {showEdit ? 
             <>
