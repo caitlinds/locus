@@ -44,10 +44,6 @@ export default function App() {
     <main className="App">
       { user ?
           <>
-            {/* <aside>
-              <NavBar user={user} setUser={setUser} />
-            </aside>
-            <hr/> */}
             <Routes>
               {/* Route components in here */}
               <Route path="/*" element={<PortalPage user={user} setUser={setUser}/>} />
@@ -64,7 +60,7 @@ export default function App() {
               <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
             </Routes>
           </>
-          :
+           :
           <>
           <AuthPage setUser={setUser} />
           </>
