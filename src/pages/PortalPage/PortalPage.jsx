@@ -6,7 +6,7 @@ import NavBar from '../../components/NavBar/NavBar';
 // import * as tweetsAPI from '../../utilities/tweets-api';
 // import { useState, useEffect } from 'react';
 
-export default function PortalPage({user, setUser}) {
+export default function PortalPage({ user, setUser }) {
   // const [tweets, setTweets] = useState([]);
 
   // useEffect(function() {

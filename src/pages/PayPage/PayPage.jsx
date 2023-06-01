@@ -1,4 +1,4 @@
-export default function PayPage(user, setUser) {
+export default function PayPage({user, setUser}) {
 
   return (
     <>

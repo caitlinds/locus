@@ -2,14 +2,24 @@ const Goal = require('../../models/goal');
 
 module.exports = {
     getAll,
+    getUserAll,
     create,
     deleteGoal,
     update
 };
 
 async function getAll(req, res) {
-  const goals = await Goal.find({}).sort('-createdAt').populate('user').exec();
+  const goals = await Goal.find({user: req.user._id}).sort('-createdAt').populate('user').exec();
   res.json(goals);
+}
+
+async function getUserAll(req, res) {
+  try {
+    const goals = await Goal.find({user: req.user._id}).sort('-createdAt').populate('user').exec();
+    res.json(goals);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 }
 
 async function create(req, res) {

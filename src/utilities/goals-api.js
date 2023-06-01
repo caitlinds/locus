@@ -5,6 +5,10 @@ export function getAll() {
     return sendRequest(BASE_URL);
 }
 
+export function getUserAll() {
+    return sendRequest(BASE_URL);
+}
+
 export function add(goalData) {
     return sendRequest(BASE_URL, 'POST', goalData);
 }

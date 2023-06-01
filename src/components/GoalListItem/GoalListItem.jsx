@@ -3,10 +3,10 @@ import { useState } from 'react';
 import './GoalListItem.css';
 import EditGoalForm from '../../components/EditGoalForm/EditGoalForm';
 import DeleteGoal from '../../components/DeleteGoal/DeleteGoal';
-import ReplyForm from '../ReplyForm/ReplyForm';
-import Retweet from '../../components/Retweet/Retweet';
-import Favorite from '../../components/Favorite/Favorite';
-import Bookmark from '../../components/Bookmark/Bookmark';
+// import ReplyForm from '../ReplyForm/ReplyForm';
+// import Retweet from '../../components/Retweet/Retweet';
+// import Favorite from '../../components/Favorite/Favorite';
+// import Bookmark from '../../components/Bookmark/Bookmark';
 
 export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, handleUpdateGoal}) {
   const [showEdit, setShowEdit] = useState(true);
@@ -14,19 +14,20 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
 
   return (
     <>
-    <h4>{user.name}</h4>
-    <li id="userName">{goal.user.name}</li>
         {/* {user._id}
         {goal.user._id} */}
         {/* {goal.user._id === goal.user._id ?  */}
-        {goal.user._id === req.user._id ? 
+        {goal.user._id === user._id ?
           <div>
+            <li id="userName">{goal.createdAt.split("", 10)}</li>
             {showEdit ? 
             <>
             <Link className="link" to="">
               <li className="goalContent">
-                  {goal.content}
+                  {/* {goal.content} */}
+                  <div id="goalText">{goal.content}</div>
                   <div id="css-test">
+                  <article className="inline">
                   <button className="editBtn" onClick={() => setShowEdit(!showEdit)}>
                     <img alt="edit" id="edit-icon" src="edit_icon.png"/>
                   </button>
@@ -35,6 +36,7 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
                     goal={goal} 
                     handleDeleteGoal={handleDeleteGoal} 
                   />
+                  </article>
           </div>
               </li>
             </Link>
@@ -50,7 +52,9 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
               />}
           </div> 
           : 
-          <li className="goalContent">{goal.content}</li>
+          <>
+          </>
+          // <li className="goalContent">{goal.content}</li>
           }
         <br/>
         <br/>

@@ -5,12 +5,12 @@ import GoalForm from '../../components/GoalForm/GoalForm';
 import * as goalsAPI from '../../utilities/goals-api';
 import { useState, useEffect } from 'react';
 
-export default function GoalsPage(user, setUser) {
+export default function GoalsPage({ user, setUser }) {
   const [goals, setGoals] = useState([]);
 
   useEffect(function() {
     async function getGoals() {
-      const goals = await goalsAPI.getAll();
+      const goals = await goalsAPI.getUserAll();
       setGoals(goals);
     }
     getGoals();
@@ -24,13 +24,13 @@ export default function GoalsPage(user, setUser) {
   async function handleUpdateGoal(goal, updatedContent) {
     goal.updatedContent = updatedContent.updatedContent;
     await goalsAPI.update(goal);
-    const goals = await goalsAPI.getAll();
+    const goals = await goalsAPI.getUserAll();
     setGoals(goals);
   }
 
   async function handleDeleteGoal(goalData) {
     await goalsAPI.deleteGoal(goalData);
-    const goals = await goalsAPI.getAll();
+    const goals = await goalsAPI.getUserAll();
     setGoals(goals);
   }
 

@@ -144,7 +144,7 @@ button, a.button {
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: rgb(164, 204, 244);
+  background-color: rgb(160, 190, 180);
   color: white;
   border: none;
 }
