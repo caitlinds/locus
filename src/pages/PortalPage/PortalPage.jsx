@@ -44,14 +44,10 @@ export default function PortalPage({ user, setUser }) {
         <hr/>
         <section className="flex-ctr-column">
           <h2>Portal</h2>
-          <div className="construction">
-            <h1>*Under construction*</h1>
-            <img alt="hammer" className="hammer-icon" src="./hammer_icon.png"/>
-          </div>
           <div className="rowOne">
             <Link to="/pay" className="link">
               <button className="portal-icon">
-                <img alt="pay" className="fave-icon-nb" src="./pay_icon.png"/>
+                <img alt="pay" className="pay-icon" src="./pay_icon.png"/>
               </button>
               <h4>Pay</h4>
             </Link>
@@ -71,7 +67,7 @@ export default function PortalPage({ user, setUser }) {
           <div className="rowTwo">
             <Link to="/directory" className="link">
               <button className="portal-icon">
-                <img alt="directory" className="fave-icon-nb" src="./directory_icon.png"/>
+                <img alt="directory" className="dir-icon" src="./directory_icon.png"/>
               </button>
               <h4>Directory</h4>
             </Link>
@@ -83,7 +79,7 @@ export default function PortalPage({ user, setUser }) {
             </Link>
             <Link to="/goals" className="link">
               <button className="portal-icon">
-                <img alt="goals" className="bm-icon-nb" src="./goals_icon.png"/>
+                <img alt="goals" className="goals-icon" src="./goals_icon.png"/>
               </button>
               <h4>Goals</h4>
             </Link>

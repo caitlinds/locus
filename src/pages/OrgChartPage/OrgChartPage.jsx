@@ -1,4 +1,4 @@
-export default function Favorites(user, setUser, tweets, setTweets) {
+export default function OrgChart(user, setUser) {
 
   return (
     <>

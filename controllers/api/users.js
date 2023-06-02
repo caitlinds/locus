@@ -5,6 +5,7 @@ const User = require('../../models/user');
 module.exports = {
   create,
   login,
+  getAll
 };
 
 async function create(req, res) {
@@ -37,6 +38,10 @@ async function login(req, res) {
   }
 }
 
+async function getAll(req, res) {
+  const users = await User.find().sort('-createdAt').exec();
+  res.json(users);
+}
 
 /* Helper Functions */
 

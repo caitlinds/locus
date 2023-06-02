@@ -1,3 +1,7 @@
-.Favorites {
+.Directory {
     display: flex;
+}
+
+.dirList {
+    list-style: none;
 }

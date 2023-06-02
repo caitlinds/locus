@@ -39,6 +39,28 @@
     text-decoration: none;
 }
 
+.pay-icon {
+    height: 50px;
+    width: 55px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.dir-icon {
+    height: 50px;
+    width: 55px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.goals-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    /* margin-left: 10px; */
+    background-color: white;
+}
+
 /* .timeoffBtn {
     height: 20px;
     width: auto;

@@ -6,7 +6,7 @@ export function getAll() {
 }
 
 export function getUserAll() {
-    return sendRequest(BASE_URL);
+    return sendRequest(`${BASE_URL}/userall`);
 }
 
 export function add(goalData) {

@@ -1,7 +1,7 @@
 import './TimeClockPage.css';
 
 export default function TimeClock() {
-  const curDate = new Date().toISOString();
+  const curDate = Date();
 
   return (
     <>
@@ -9,8 +9,8 @@ export default function TimeClock() {
       <h1>Time Clock</h1>
       <div className="flex-ctr-column">
         <div className="timeClock">
-          <h2 id="date">{curDate.split("", 10)}</h2>
-          <h3 id="time">{curDate.substring(11, 19)}</h3>
+          <h2 id="date">{curDate.split("", 15)}</h2>
+          <h3 id="time">{curDate.substring(16, 24)}</h3>
         </div>
         <button className="goalBtn">Clock In</button>
       </div>
