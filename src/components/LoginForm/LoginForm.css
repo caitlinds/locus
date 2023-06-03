@@ -1,3 +1,19 @@
 .logInBtn {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    /* width: 100px; */
 }
+
+.logInBtn:disabled, form:invalid button[type="submit"] {
+    cursor: not-allowed;
+    background-color: rgb(135, 137, 140);
+    color: white;
+    border: none;
+  }

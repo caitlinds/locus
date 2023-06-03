@@ -8,7 +8,8 @@ export default function AuthPage({ setUser }) {
   return (
     <>
     <main className="AuthPage">
-      <h1>Locus HR</h1>
+      <img alt="logo" className="login-logo" src="./logo.png"></img>
+      <h2>Welcome to Locus HR</h2>
       <button className="signUpBtn" onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
       { showSignUp ?
           <SignUpForm setUser={setUser} />

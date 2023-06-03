@@ -36,7 +36,7 @@ export default function LoginForm({ setUser }) {
           <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
           <label>Password</label>
           <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-          <button className="logInBtn" type="submit">LOG IN</button>
+          <button className="logInBtn" type="submit">Log in</button>
         </form>
       </div>
       <p className="error-message">&nbsp;{error}</p>
