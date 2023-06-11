@@ -21,6 +21,7 @@ export default function Directory(user, setUser) {
       {users.map((user, idx) => 
       (<li className="dirList">
         {user.name} - {user.email}
+        {/* key={idx} */}
         </li>)
       )}
       </h2>

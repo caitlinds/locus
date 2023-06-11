@@ -23,6 +23,7 @@ export default function GoalForm({handleAddGoal}) {
         <textarea className="tweetInput" name="content" value={content.content} onChange={handleChange} required/>
         <button className="goalBtn" type="submit">Add Goal</button>
       </form>
+      {/* {content.content} */}
     </>
   );
 }

@@ -14,9 +14,6 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
 
   return (
     <>
-        {/* {user._id}
-        {goal.user._id} */}
-        {/* {goal.user._id === goal.user._id ?  */}
         {goal.user._id === user._id ?
           <div>
             <li id="userName">{goal.createdAt.split("", 10)}</li>

@@ -36,7 +36,7 @@ async function deleteGoal(req, res) {
 }
 
 async function update(req, res) {
-  const goal = await Goal.findByIdAndUpdate({_id:req.body._id}, {content:req.body.updatedContent});
+  await Goal.findByIdAndUpdate({_id:req.body._id}, {content:req.body.updatedContent});
   const goals =  await Goal.find({user: req.user._id}).sort('-createdAt').populate('user').exec();
   res.json(goals);
 } 

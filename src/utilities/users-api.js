@@ -12,3 +12,15 @@ export async function login(credentials) {
 export function getAll() {
   return sendRequest(`${BASE_URL}/all`);
 }
+
+export function update(userData) {
+  return sendRequest(`${BASE_URL}/update`, 'POST', userData);
+}
+
+// export function clockIn(userData) {
+//   return sendRequest(`${BASE_URL}/clockIn`, 'POST', userData);
+// }
+
+// export function clockOut(userData) {
+//   return sendRequest(`${BASE_URL}/clockOut`, 'POST', userData);
+// }

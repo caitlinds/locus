@@ -5,7 +5,10 @@ const User = require('../../models/user');
 module.exports = {
   create,
   login,
-  getAll
+  getAll,
+  update,
+  // clockIn,
+  // clockOut
 };
 
 async function create(req, res) {
@@ -53,3 +56,27 @@ function createJWT(user) {
     { expiresIn: '24h' }
   );
 }
+
+async function update(req, res) {
+  if (req.body.timeStatus) {
+    await User.findByIdAndUpdate({_id:req.user._id}, {timeStatus:false});
+    const user = await User.findById({_id:req.user._id});
+    res.json(user);
+  } else {
+    await User.findByIdAndUpdate({_id:req.user._id}, {timeStatus:true});
+    const user = await User.findById({_id:req.user._id});
+    res.json(user);
+  }
+}
+
+// async function clockIn(req, res) {
+//   await User.findByIdAndUpdate({_id:req.user._id}, {timeStatus:true});
+//   const user = await User.findById({_id:req.user._id});
+//   res.json(user);
+// }
+
+// async function clockOut(req, res) {
+//   await User.findByIdAndUpdate({_id:req.user._id}, {timeStatus:false});
+//   const user = await User.findById({_id:req.user._id});
+//   res.json(user);
+// }

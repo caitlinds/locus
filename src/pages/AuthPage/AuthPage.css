@@ -27,7 +27,7 @@
   margin-bottom: 5px;
 }
 
-.signUpBtn:disabled, form:invalid button[type="submit"] {
+.signUpBtn:disabled {
   cursor: not-allowed;
   background-color: rgb(135, 137, 140);
   color: white;

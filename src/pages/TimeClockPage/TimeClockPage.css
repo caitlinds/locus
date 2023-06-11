@@ -8,6 +8,7 @@
     align-items: center;
     /* justify-content: center; */
 }
+
 #date {
     margin: 50px 0px 10px 0px;
 }
@@ -18,4 +19,8 @@
     border: 2px solid black;
     padding: 20px 30px 20px 30px;
     border-radius: 30px;
+}
+
+#time-zone {
+    margin-top: -10px;
 }
