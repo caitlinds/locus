@@ -38,12 +38,9 @@ export default function GoalsPage({ user, setUser }) {
     <>
     <main>
       <h1>Goals</h1>
-        {/* Write and list goals (like tweets)
-        Add goal date
-        Post date turn goal red
-        Check box completed or not? */}
-      <section className="flex-ctr-column">
+      <section className="flex-ctr-column goal-page-container">
         <GoalForm handleAddGoal={handleAddGoal} />
+      <div className="goal-page-content">
         <GoalList 
           user={user} 
           goals={goals} 
@@ -51,6 +48,7 @@ export default function GoalsPage({ user, setUser }) {
           handleDeleteGoal={handleDeleteGoal} 
           handleUpdateGoal={handleUpdateGoal}
         />
+        </div>
         </section>
     </main>
     </>

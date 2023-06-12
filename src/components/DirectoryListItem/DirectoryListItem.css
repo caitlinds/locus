@@ -1,0 +1,20 @@
+.DirectoryListItem {
+  display: flex;
+}
+
+.directory-list-item {
+  list-style: none;
+  margin-left: -40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+}
+
+.directory-list-name {
+  font-weight: 600;
+}
+
+.directory-list-phone {
+  font-style: italic;
+}

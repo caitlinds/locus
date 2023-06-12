@@ -36,7 +36,7 @@ export default function TimeClockPage({ user, setUser }) {
     <>
     <main>
       <h1>Time Clock</h1>
-      <div className="flex-ctr-column">
+      <div className="flex-ctr-column time-page-container">
         <div className="timeClock">
           <h2 id="date">{curDate.split("", 15)}</h2>
           <h3 id="time">{curDate.substring(16, 24)}</h3>
@@ -47,6 +47,7 @@ export default function TimeClockPage({ user, setUser }) {
           setUser={setUser}
           handleAddTime={handleAddTime}
           handleCloseTime={handleCloseTime} />
+      <div className="time-page-content">
         <TimeList 
           user={user} 
           setUser={setUser}
@@ -55,6 +56,7 @@ export default function TimeClockPage({ user, setUser }) {
           handleAddTime={handleAddTime}
           handleCloseTime={handleCloseTime}
         />
+      </div>
       </div>
     </main>
     </> 

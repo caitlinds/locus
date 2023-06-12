@@ -1,35 +1,20 @@
 .home-icon {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     margin-top: 15px;
     /* background-color: white; */
 }
-
-/* .fave-icon-nb {
-    height: 50px;
-    width: 75px;
-    margin-top: 5px;
-    background-color: white;
-} */
 
 .logout-icon-nb {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     margin-top: 15px;
 }
 
-/* .bm-icon-nb {
-    height: 50px;
-    width: 50px;
-    margin-top: 5px;
-    background-color: white;
-} */
-
 .profile-icon {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     margin-top: 15px;
-    /* background-color: white; */
 }
 
 .nav-bar-icon {

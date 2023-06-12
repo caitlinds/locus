@@ -20,12 +20,14 @@ export default function PayPage({user, setUser}) {
     <>
     <main>
       <h1>Pay</h1>
-      <div className="flex-ctr-column">
-        <h2>
+      {/* <div className="flex-ctr-column"> */}
+      <div className="flex-ctr-column pay-page-container">
+        <h2 id="date">
           {curDate.split("", 15)}
           <br/>
           Hourly Pay: ${hrlyPay}
         </h2>
+        <div className="pay-page-content">
         <PayList 
           user={user} 
           setUser={setUser}
@@ -33,7 +35,9 @@ export default function PayPage({user, setUser}) {
           setTimes={setTimes}
           hrlyPay={hrlyPay}
         />
+        </div>
       </div>
+      {/* </div> */}
     </main>
     </>
   );
