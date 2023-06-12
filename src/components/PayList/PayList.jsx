@@ -19,7 +19,7 @@ export default function PayList({user, setUser, times, setTimes, hrlyPay}) {
         key={idx}
       />
       :
-      ""
+      "" 
       ));
 
     return (
