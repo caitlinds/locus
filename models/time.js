@@ -24,20 +24,3 @@ const timeSchema = new Schema ({
 })
 
 module.exports = mongoose.model('Time', timeSchema);
-
-// - Time clock model:
-// -  - userId
-// - Clock in:
-//     - Date
-//     - Time
-//     - Required
-// - Clock out:
-//     - Date
-//         - default: null
-//     - Time 
-//         - default: null
-// - Total time:
-//     - Number of hours
-//         - * Calculate by converting and subtracting clock out - clock in timestamps
-//         - default: null
-// - Timestamp

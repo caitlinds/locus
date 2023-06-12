@@ -17,6 +17,13 @@ const userSchema = new Schema({
     type: String,
     required: true
   },
+  phone: {
+    type: String
+  },
+  title: {
+    type: String,
+    default: "Associate"
+  },
   timeStatus: {
     type: Boolean
   },

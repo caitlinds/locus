@@ -6,9 +6,9 @@ Locus HR is an online human resources portal that allows both employees and admi
 ## Screenshots
 ![Locus HR Sign Up](https://i.imgur.com/P9lqOfH.png)
 
-![Locus HR Home Page](https://i.imgur.com/o4QwiJS.png)
+![Locus HR Home Page](https://i.imgur.com/cS1QMCM.png)
 
-![Locus HR Time Clock Page](https://i.imgur.com/veVEESt.png)
+![Locus HR Time Clock Page](https://i.imgur.com/7oPNnsz.png)
 
 ![Locus HR Goals Page](https://i.imgur.com/ybxwy50.png)
 

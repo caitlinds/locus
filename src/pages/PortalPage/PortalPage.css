@@ -2,7 +2,7 @@
     /* display: flex;
     flex-direction: column; */
     display: grid;
-    grid-template-columns: 100px 2px 3fr;
+    grid-template-columns: 180px 2px 3fr;
     /* grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "1 2 3"
@@ -21,6 +21,21 @@
     align-items: center;
 }
 
+.portal-page-hdr {
+    display: flex;
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 50px; */
+    /* font-size: 20px; */
+}
+
+.portal-page-user-title {
+    display: flex;
+    margin-top: -10px;
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 50px; */
+    /* font-size: 20px; */
+}
+
 .rowOne {
     display: inline-flex;
 }
@@ -29,36 +44,71 @@
     display: inline-flex;
 }
 
-.portal-icon {
-    background-color: white;
-    border: none;
+.portal-icon-container {
+    background-color: transparent;
     margin: 15px 15px 0px 15px;
+    border: none;
+    /* border-radius: 20px; */
 }
 
 .portal-icon-title {
     text-decoration: none;
+    margin-top: 5px;
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 50px; */
+    /* font-size: 20px; */
 }
 
-.pay-icon {
-    height: 50px;
-    width: 55px;
+.portal-icon {
+    height: 200px;
+    width: 200px;
     margin-top: 5px;
-    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* .time-clock-icon {
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .dir-icon {
-    height: 50px;
-    width: 55px;
+    height: 200px;
+    width: 200px;
     margin-top: 5px;
-    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .goals-icon {
-    height: 50px;
-    width: 50px;
+    height: 200px;
+    width: 200px;
     margin-top: 5px;
-    /* margin-left: 10px; */
-    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.settings-icon {
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+} */
+
+.portal-page {
+    background: linear-gradient(-65deg, rgba(113, 178, 148, 0.721), rgba(218, 223, 219, 0.827), #e6ebe7c4, rgb(238, 239, 238));
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 30px 200px 30px 200px;
 }
 
 /* .timeoffBtn {

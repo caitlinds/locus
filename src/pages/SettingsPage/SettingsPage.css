@@ -1,3 +1,7 @@
 .Favorites {
     display: flex;
 }
+
+.settings-email {
+    list-style: none;
+}

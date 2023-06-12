@@ -21,6 +21,7 @@
   justify-content: space-between;
   overflow: scroll;
   font-size: 15px;
+  background-color: white;
 }
 
 .editBtn {
@@ -63,17 +64,17 @@
   margin-right: 2px;
 }
 
-.reply-icon {
+/* .reply-icon {
   height: 13px;
   width: 13px;
   margin-top: 5px;
-  background-color: white;
-}
+  background-color: transparent;
+} */
 
-.replyBtn {
-  background-color: white;
+/* .replyBtn {
+  background-color: transparent;
   border: none;
-}
+} */
 
 .link {
   text-decoration: none;

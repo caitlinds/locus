@@ -63,17 +63,17 @@
   margin-right: 2px;
 }
 
-.reply-icon {
+/* .reply-icon {
   height: 13px;
   width: 13px;
   margin-top: 5px;
-  background-color: white;
-}
+  background-color: transparent;
+} */
 
-.replyBtn {
+/* .replyBtn {
   background-color: white;
   border: none;
-}
+} */
 
 .link {
   text-decoration: none;
@@ -86,4 +86,12 @@
 
 .inline {
   display: inline;
+}
+
+.time-session {
+  list-style: none;
+  margin-left: -40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
 }
