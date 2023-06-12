@@ -12,6 +12,7 @@ export default function TimeListItem({ user, time, setTimes, handleAddTime, hand
         : 
         "Current session"}
       </li>
+      {/* <li>{time.timeOut.toString()}</li> */}
     </div>
       <br/>
     </>

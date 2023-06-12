@@ -33,8 +33,10 @@ async function create(req, res) {
 
 async function update(req, res) {
   req.body.user = req.user._id;
-  req.body.timeOut = Date();
+  req.body.timeOut = new Date();
   const time = await Time.findOneAndUpdate({user:req.user._id, timeOut:null}, {timeOut:req.body.timeOut});
+  const hrsWorked = (req.body.timeOut - time.timeIn)/(60 * 60 * 1000); 
+  await Time.findOneAndUpdate({user:req.user._id, _id:time._id}, {totalHours:hrsWorked});
   const times =  await Time.find({user: req.user._id}).sort('-createdAt').populate('user').exec();
   res.json(times);
-}
+;}

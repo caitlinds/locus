@@ -25,7 +25,8 @@ const userSchema = new Schema({
     default: "Associate"
   },
   timeStatus: {
-    type: Boolean
+    type: Boolean,
+    default: false
   },
 }, {
   timestamps: true,
