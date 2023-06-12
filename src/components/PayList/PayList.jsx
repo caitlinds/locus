@@ -4,11 +4,12 @@ import './PayList.css';
 export default function PayList({user, setUser, times, setTimes, hrlyPay}) {
   var grossHours = 0;
   times.forEach(function(time) {
-    grossHours += time.totalHours;
+    if (time.timeOut) grossHours += time.totalHours;
   })
   const grossPay = grossHours * hrlyPay;
 
   const PayList = times.map((time, idx) => (
+    time.timeOut ? 
       <PayListItem 
         user={user} 
         setUser={setUser}
@@ -17,6 +18,8 @@ export default function PayList({user, setUser, times, setTimes, hrlyPay}) {
         hrlyPay={hrlyPay}
         key={idx}
       />
+      :
+      ""
       ));
 
     return (
