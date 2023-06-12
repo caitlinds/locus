@@ -1,4 +1,4 @@
-# Locus HR (Redesign in progress)
+# Locus HR
 
 ## Description
 Locus HR is an online human resources portal that allows both employees and administrative personnel to access, input, and update employee and company information. With Locus HR, employees have access to a wide range of features, including the ability to view their pay stubs, clock in and out, access a directory of all employees and their contact information, review and write goals, and manage their personal settings. This comprehensive platform enables employees to manage their HR-related tasks and stay informed about their company and fellow colleagues.
