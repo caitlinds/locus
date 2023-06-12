@@ -10,7 +10,7 @@ Locus HR is an online human resources portal that allows both employees and admi
 
 ![Locus HR Time Clock Page](https://i.imgur.com/KuOAZRP.png)
 
-![Locus HR Pay Page](https://i.imgur.com/pGTSK6z.png)
+![Locus HR Pay Page](https://i.imgur.com/5LozPqN.png)
 
 ![Locus HR Directory Page](https://i.imgur.com/9oGb9Iu.png)
 
