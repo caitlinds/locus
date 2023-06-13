@@ -10,11 +10,14 @@ Locus HR is an online human resources portal that allows both employees and admi
 
 ![Locus HR Time Clock Page](https://i.imgur.com/KuOAZRP.png)
 
+![Locus HR Profile Page](https://i.imgur.com/ZAsvPdf.png)
+
 ![Locus HR Pay Page](https://i.imgur.com/5LozPqN.png)
 
 ![Locus HR Directory Page](https://i.imgur.com/9oGb9Iu.png)
 
 ![Locus HR Goals Page](https://i.imgur.com/d0MVobT.png)
+
 
 
 ## Technologies Used
@@ -36,7 +39,8 @@ Locus HR is an online human resources portal that allows both employees and admi
 - Clock in and out and view time clock history
 - View a company-wide directory
 - Create, update, and view your goals
-- Access your profile settings
+- View your personal profile
+- Access and update your user settings
 
 ## Icebox Features
 Future improvements:
