@@ -16,12 +16,11 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
             <>
             <Link className="link" to="">
               <li className="goalContent">
-                  {/* {goal.content} */}
                   <div id="goalText">{goal.content}</div>
                   <div id="css-test">
                   <article className="inline">
                   <button className="editBtn" onClick={() => setShowEdit(!showEdit)}>
-                    <img alt="edit" id="edit-icon" src="edit_icon.png"/>
+                    <img alt="edit" id="edit-icon" src="edit_icon.jpg"/>
                   </button>
                   <DeleteGoal 
                     user={user} 
@@ -46,7 +45,6 @@ export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, h
           : 
           <>
           </>
-          // <li className="goalContent">{goal.content}</li>
           }
         <br/>
         <br/>

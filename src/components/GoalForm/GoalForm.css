@@ -10,10 +10,6 @@
   font-size: 17px; 
 }
 
-/* .goalBtn:disabled {
-  background-color: rgb(158, 194, 175);
-} */
-
 .flex-ctr-column {
   display: flex;
   flex-direction: column;
@@ -36,4 +32,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  background-color: white;
 }

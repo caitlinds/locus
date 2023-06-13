@@ -21,16 +21,17 @@
   justify-content: space-between;
   overflow: scroll;
   font-size: 15px;
+  background-color: rgba(225, 234, 230, 0.576);
 }
 
-.editBtn {
+/* .editBtn {
   background-color: white;
   color: white;
   height: 20px;
   width: 20px;
   margin-top: 5px;
   border: none;
-}
+} */
 
 #edit-icon {
   height: 11px;
@@ -42,7 +43,7 @@
   padding: 0px;
 }
 
-#tweetOptBtn {
+/* #tweetOptBtn {
   margin: 2px 5px 0px 0px;
   padding: 0px 0px 0px 0px;
   height: 15px;
@@ -51,7 +52,7 @@
   align-items: center;
   background-color: white;
   border: 1px solid grey;
-}
+} */
 
 #opts-btn {
   height: 11px;
