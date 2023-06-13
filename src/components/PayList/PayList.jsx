@@ -6,6 +6,7 @@ export default function PayList({user, setUser, times, setTimes, hrlyPay}) {
   times.forEach(function(time) {
     if (time.timeOut) grossHours += time.totalHours;
   })
+  
   const grossPay = grossHours * hrlyPay;
 
   const PayList = times.map((time, idx) => (

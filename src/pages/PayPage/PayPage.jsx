@@ -4,7 +4,7 @@ import * as timesAPI from '../../utilities/times-api';
 import { useState, useEffect } from 'react';
 
 export default function PayPage({user, setUser}) {
-  const hrlyPay = user.name.length + 20;
+  const hrlyPay = user.email.length + 15;
   const curDate = Date();
   const [times, setTimes] = useState([]);
 
@@ -20,7 +20,6 @@ export default function PayPage({user, setUser}) {
     <>
     <main>
       <h1>Pay</h1>
-      {/* <div className="flex-ctr-column"> */}
       <div className="flex-ctr-column pay-page-container">
         <h2 id="date">
           {curDate.split("", 15)}
@@ -37,7 +36,6 @@ export default function PayPage({user, setUser}) {
         />
         </div>
       </div>
-      {/* </div> */}
     </main>
     </>
   );

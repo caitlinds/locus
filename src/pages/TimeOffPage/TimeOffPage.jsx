@@ -1,4 +1,4 @@
-export default function TimeOff() {
+export default function TimeOff({user, setUser}) {
 
   return (
     <>

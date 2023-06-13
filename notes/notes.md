@@ -42,7 +42,7 @@
 // export default function TweetListItem({ user, tweet, setTweets, handleDeleteTweet, handleUpdateTweet}) {
 //   const [showReply, setShowReply] = useState(true);
 
-//   return (
+<!-- //   return (
 //     <>
 //     <li id="userName">{tweet.user.name}</li>
 //         {tweet.user._id === user._id ? 
@@ -108,4 +108,101 @@
 //         <br/>
 //     </>
 //   );
-// }
+// } -->
+
+Edit Form:
+// import { useState } from 'react';
+// import './EditForm.css';
+
+// export default function EditForm({user, tweet, setTweets, handleUpdateTweet, showEdit, setShowEdit}) {
+//   const [updatedContent, setUpdatedContent] = useState({updatedContent:tweet.content});
+  
+//   async function handleSubmit(e) {
+//     e.preventDefault();
+//     await handleUpdateTweet(tweet, updatedContent);
+//     setUpdatedContent(updatedContent);
+//     setShowEdit(true);
+//   }
+
+//   function handleChange(e) {
+//     setUpdatedContent({
+//     ...updatedContent,
+<!-- //     [e.target.name]: e.target.value -->
+//     })
+//   }
+
+<!-- //   return (
+//     <>
+//       <form className="flex-ctr-column" onSubmit={handleSubmit}>
+//         <input type="hidden" name="tweet" value={tweet}></input>
+//         <textarea className="updatedContent" name="updatedContent" value={updatedContent.updatedContent} onChange={handleChange}/>
+//         <button className="saveBtn" type="submit">Save</button>
+//       </form>
+//     </>
+//   );
+// } -->
+
+Models:
+// const bookmarksSchema = new Schema ({
+//   user: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'User',
+//     required: true
+//   }
+// }, {
+//   timestamps: true
+// })
+
+// const likesSchema = new Schema ({
+//   user: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'User',
+//     required: true
+//   },
+// }, {
+//   timestamps: true
+// })
+
+// const replySchema = new Schema ({
+//   content: {
+//     type: String,
+//     required: true
+//   },
+//   user: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'User',
+//     required: true
+//   },
+//   likes: [likesSchema],
+//   bookmarks: [bookmarksSchema]
+// }, {
+//   timestamps: true
+// })
+
+// const tweetSchema = new Schema ({
+//   content: {
+//     type: String,
+//     required: true
+//   },
+//   user: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'User',
+//     required: true
+//   },
+//   likes: [likesSchema],
+//   replies: [replySchema],
+//   bookmarks: [bookmarksSchema],
+//   retweets: [{
+//     rt: {
+//       type: Boolean,
+//       default: false
+//     },
+//     rtUser: {
+//       type: Schema.Types.ObjectId,
+//       ref: 'User',
+//   },
+//     rtUserName: String,
+//   }],
+// }, {
+//   timestamps: true
+// })

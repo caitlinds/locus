@@ -1,7 +1,48 @@
-.Favorites {
+.Settings {
     display: flex;
 }
 
+.flex-left {
+    display: flex;
+    align-self: left;
+}
+
+.settings-hdr {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.settings-list {
+    margin: 20px;
+}
+
+.settings-descrip {
+    vertical-align: middle;
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+.settings-input {
+    border: 1px solid black;
+    width: 200px;
+}
+
 .settings-email {
-    list-style: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+.settings-input:focus {
+    border: 1px solid rgb(113, 178, 143);
+}
+
+.inline {
+    display: inline;
+}
+
+.info-hdr {
+    margin-bottom: 30px;
 }

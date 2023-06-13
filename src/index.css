@@ -113,9 +113,9 @@ input {
   outline: none;
 }
 
-input:focus {
+/* input:focus {
   border-color: var(--orange);
-}
+} */
 
 button, a.button {
   /* margin: 1vmin;
@@ -152,4 +152,8 @@ button, a.button {
 button[type="submit"] {
   grid-column: span 2;
   /* margin: 1vmin 0 0; */
+}
+
+li {
+  list-style: none;
 }

@@ -17,6 +17,18 @@ export function update(userData) {
   return sendRequest(`${BASE_URL}/update`, 'POST', userData);
 }
 
+export function updateName(userData) {
+  return sendRequest(`${BASE_URL}/update-name`, 'POST', userData);
+}
+
+export function updatePhone(userData) {
+  return sendRequest(`${BASE_URL}/update-phone`, 'POST', userData);
+}
+
+export function updateTitle(userData) {
+  return sendRequest(`${BASE_URL}/update-title`, 'POST', userData);
+}
+
 // export function clockIn(userData) {
 //   return sendRequest(`${BASE_URL}/clockIn`, 'POST', userData);
 // }

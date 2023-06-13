@@ -4,7 +4,6 @@ const timesCtrl = require('../../controllers/api/times');
 
 router.get('/', timesCtrl.getAll);
 router.get('/userall', timesCtrl.getUserAll);
-// router.get('/status', timesCtrl.getStatus);
 router.post('/', timesCtrl.create);
 router.post('/update', timesCtrl.update);
 

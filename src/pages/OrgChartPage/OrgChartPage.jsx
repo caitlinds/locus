@@ -1,4 +1,4 @@
-export default function OrgChart(user, setUser) {
+export default function OrgChart({user, setUser}) {
 
   return (
     <>

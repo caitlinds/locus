@@ -6,7 +6,6 @@ module.exports = {
     getUserAll,
     create,
     update
-    // getStatus
 };
 
 async function getAll(req, res) {

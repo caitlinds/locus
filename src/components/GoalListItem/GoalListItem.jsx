@@ -3,14 +3,9 @@ import { useState } from 'react';
 import './GoalListItem.css';
 import EditGoalForm from '../../components/EditGoalForm/EditGoalForm';
 import DeleteGoal from '../../components/DeleteGoal/DeleteGoal';
-// import ReplyForm from '../ReplyForm/ReplyForm';
-// import Retweet from '../../components/Retweet/Retweet';
-// import Favorite from '../../components/Favorite/Favorite';
-// import Bookmark from '../../components/Bookmark/Bookmark';
 
 export default function GoalListItem({ user, goal, setGoals, handleDeleteGoal, handleUpdateGoal}) {
   const [showEdit, setShowEdit] = useState(true);
-  // const [showReply, setShowReply] = useState(true);
 
   return (
     <>

@@ -18,7 +18,8 @@ const userSchema = new Schema({
     required: true
   },
   phone: {
-    type: String
+    type: String,
+    default: ""
   },
   title: {
     type: String,

@@ -1,3 +1,73 @@
-.Favorites {
+.Profile {
     display: flex;
 }
+
+.profile-name {
+    font-size: 60px;
+    margin: 30px 0px 0px 30px;
+}
+
+.profile-title {
+    font-size: 20px;
+    margin: 0px 0px 30px 35px;
+}
+
+.profile-page-container {
+    background: linear-gradient(-65deg, rgba(113, 178, 148, 0.721), rgba(218, 223, 219, 0.827), #e6ebe7c4, rgb(238, 239, 238));
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 30px 200px 30px 200px;
+    height: 580px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    /* width: 1100px; */
+}
+
+.profile-page-content {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    overflow-y: scroll;
+}
+
+.personal-info-title-container {
+    width: 1100px;
+    background: rgba(225, 234, 230, 0.576);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.personal-info-title {
+    display: flex;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.email-icon {
+    height: 36px;
+    margin-left: 30px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.profile-info-list {
+    margin-left: 30px;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+/* .personal-info-container {
+    height: 30px;
+    width: 1100px;
+    background: rgba(225, 234, 230, 0.576);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+} */

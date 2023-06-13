@@ -11,13 +11,6 @@ export default function DirectoryList({user, setUser, allUsers, setAllUsers}) {
       />
   ));
 
-  // {users.map((user, idx) => 
-  //   (<li className="dirList">
-  //     {user.name} - {user.email}
-  //     key={idx}
-  //     </li>)
-  //   )}
-
     return (
       <>
         <ul className="TimeList">{DirectoryList}</ul>

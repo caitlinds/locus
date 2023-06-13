@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import DirectoryList from "../../components/DirectoryList/DirectoryList";
 import './DirectoryPage.css';
 
-export default function Directory(user, setUser) {
+export default function Directory({user, setUser}) {
   const [allUsers, setAllUsers] = useState([]);
 
   useEffect(function() {

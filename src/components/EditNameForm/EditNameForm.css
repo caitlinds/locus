@@ -5,16 +5,18 @@
   align-items: center;
 }
 
-.saveBtn {
+.infoSaveBtn {
+  display: inline;
   background-color: rgb(74, 153, 233);
   color: white;
   padding: 1vmin;
   border-radius: 50px;
   margin-bottom: 0px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
-.saveBtn:active {
+.infoSaveBtn:active {
   background: rgba(74, 154, 233, 0.551);
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
@@ -22,13 +24,14 @@
    outline: none;
 }
 
-.saveBtn:hover {
+.infoSaveBtn:hover {
   border: 0.5px solid black;
 }
 
-.updatedContent {
-  width: 250px;
-  height: 100px;
+.updatedName {
+  display: inline;
+  width: 200px;
+  height: 35px;
   padding-left: 5px;
   border: 2px solid rgb(0 43 189);
   border-radius: 5px;
@@ -38,4 +41,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
+}
+
+.alert {
+  display: inline;
 }

@@ -1,14 +1,16 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const User = require('../../models/user');
+const mongoose = require('mongoose');
 
 module.exports = {
   create,
   login,
   getAll,
   update,
-  // clockIn,
-  // clockOut
+  updateName,
+  updatePhone,
+  updateTitle
 };
 
 async function create(req, res) {
@@ -68,6 +70,26 @@ async function update(req, res) {
     res.json(user);
   }
 }
+
+async function updateName(req, res) {
+  const user = await User.findByIdAndUpdate({_id: new mongoose.Types.ObjectId(req.user._id)}, {name:req.body.updatedName, new:false});
+  user.save();
+  const newUser = await User.findById({_id:req.user._id});
+  res.json(newUser);
+  console.log(newUser.name);
+} 
+
+async function updatePhone(req, res) {
+  await User.findByIdAndUpdate({_id: new mongoose.Types.ObjectId(req.user._id)}, {phone:req.body.updatedPhone, new:false});
+  const user = await User.findById({_id:req.user._id});
+  res.json(user);
+} 
+
+async function updateTitle(req, res) {
+  await User.findByIdAndUpdate({_id: new mongoose.Types.ObjectId(req.user._id)}, {title:req.body.updatedTitle, new:false});
+  const user = await User.findById({_id:req.user._id});
+  res.json(user);
+} 
 
 // async function clockIn(req, res) {
 //   await User.findByIdAndUpdate({_id:req.user._id}, {timeStatus:true});
