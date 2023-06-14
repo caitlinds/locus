@@ -64,13 +64,13 @@ export default function Settings({user, setUser}) {
             <br/>
             <br/>
 
-            {/* <div className="settings-descrip">Title:&nbsp;&ensp;&ensp;&ensp;&ensp;</div> */}
+            <div className="settings-descrip">Title:&nbsp;&ensp;&ensp;&ensp;&ensp;</div>
             <div className="inline">
-              {/* <EditTitleForm 
+              <EditTitleForm 
                 user={user}
                 setUser={setUser}
                 handleUpdateUserTitle={handleUpdateUserTitle}
-              /> */}
+              />
             </div>
           </div>
         </div>
